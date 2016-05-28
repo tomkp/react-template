@@ -3,30 +3,30 @@ const webpack = require('webpack');
 
 
 module.exports = {
-    devtool: 'cheap-module-eval-source-map',
+    devtool: 'source-map',
     entry: [
         'webpack-hot-middleware/client',
         './src/components/Application.js'
     ],
     output: {
         path: path.join(__dirname, 'dist'),
-        filename: "bundle.js"
+        filename: 'bundle.js',
+        publicPath: '/static/'
     },
     module: {
         loaders: [
             {
                 test: /\.scss$|\.css$/,
-                loader: "style-loader!css-loader!postcss-loader"
+                loader: 'style-loader!css-loader!!postcss-loader'
             },
             {
-                test: /\.jsx?$/,
-                exclude: /(node_modules|bower_components)/,
-                loader: 'babel'
+                test: /\.js$/,
+                loaders: ['babel'],
+                exclude: /(node_modules)/
             }
         ]
     },
     plugins: [
-        new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoErrorsPlugin()
     ],
