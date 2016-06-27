@@ -5,7 +5,6 @@ const webpack = require('webpack');
 module.exports = {
     devtool: 'source-map',
     entry: [
-        'webpack-hot-middleware/client',
         './src/components/Application.js'
     ],
     output: {
@@ -27,7 +26,6 @@ module.exports = {
         ]
     },
     plugins: [
-        new webpack.HotModuleReplacementPlugin(),
         new webpack.NoErrorsPlugin()
     ],
     postcss: function () {
