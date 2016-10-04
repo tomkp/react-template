@@ -11,7 +11,7 @@
   "author": "tomkp <tom@tomkp.com> (http://tomkp.com)",
   "license": "MIT",
   "dependencies": {
-    "es6-promise": "^3.2.1",
+    "es6-promise": "^4.0.5",
     "normalize.css": "^4.2.0",
     "react": "^15.2.1",
     "react-dom": "^15.3.0"
