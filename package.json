@@ -31,7 +31,7 @@
     "eslint-plugin-jsx-a11y": "^1.5.4",
     "eslint-plugin-react": "^5.1.1",
     "express": "^4.13.4",
-    "postcss": "^5.1.2",
+    "postcss": "^5.2.15",
     "postcss-color-function": "^2.0.1",
     "postcss-loader": "^0.9.1",
     "precss": "^1.4.0",
